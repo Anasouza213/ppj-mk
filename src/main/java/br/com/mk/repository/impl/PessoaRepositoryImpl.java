@@ -13,7 +13,7 @@ public class PessoaRepositoryImpl implements PessoaRepository {
     private EntityManager entityManager;
 
     @Override
-    public Pessoa salvar(Pessoa pessoa) {
+    public Pessoa save(Pessoa pessoa) {
         this.entityManager.persist(pessoa);
         return pessoa;
     }
