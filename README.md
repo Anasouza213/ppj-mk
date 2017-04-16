@@ -1,4 +1,4 @@
-# Pre Project Java - PPJ.
+# Pre-Java Project - PPJ.
 Project template to architecture Java, using the frameworks: 
   ````
     - JUnit.
