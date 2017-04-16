@@ -20,10 +20,10 @@ public class HomeBean implements Serializable{
     private Pessoa pessoa;
 
     //Methods Bean
-    public void salvar(){
+    public void save(){
         if(pessoa != null) {
-            pessoaService.salvar(pessoa);
-            FacesUtil.sucesso("GRAVADO COM SUCESSO");
+            pessoaService.save(pessoa);
+            FacesUtil.sucess("GRAVADO COM SUCESSO");
         }else{
             FacesUtil.error("FALHA AO SALVAR OBJETO");
         }
