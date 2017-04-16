@@ -2,12 +2,13 @@ package br.com.mk.webservice;
 
 import br.com.mk.entity.Pessoa;
 import br.com.mk.service.PessoaService;
+import br.com.mk.webservice.validators.ValidateWS;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import java.util.Collection;
+import javax.ws.rs.core.Response;
 
 @Path("/pessoaws")
 @RequestScoped
@@ -18,8 +19,8 @@ public class PessoaServiceWS {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Collection<Pessoa> findAll(){
-      return pessoaService.findAll();
+    public Response findAll(){
+        return ValidateWS.status(pessoaService.findAll());
     }
 
     @POST
@@ -33,8 +34,8 @@ public class PessoaServiceWS {
     @Path("/{id}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Pessoa find(@PathParam("id") Long id){
-        return pessoaService.find(id);
+    public Response find(@PathParam("id") Long id){
+        return ValidateWS.status(pessoaService.find(id));
     }
 
     @DELETE
