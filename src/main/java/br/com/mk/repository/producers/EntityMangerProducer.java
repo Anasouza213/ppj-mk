@@ -1,4 +1,4 @@
-package br.com.mk.producers;
+package br.com.mk.repository.producers;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.context.RequestScoped;
