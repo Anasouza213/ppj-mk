@@ -23,9 +23,9 @@ public class HomeBean implements Serializable{
     public void save(){
         if(pessoa != null) {
             pessoaService.save(pessoa);
-            FacesUtil.sucess("GRAVADO COM SUCESSO");
+            FacesUtil.sucess("SAVED SUCCESSFULLY.");
         }else{
-            FacesUtil.error("FALHA AO SALVAR OBJETO");
+            FacesUtil.error("FAILED TO SAVE.");
         }
 
         this.pessoa = new Pessoa();
