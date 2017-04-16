@@ -17,7 +17,7 @@ public class PessoaServiceImpl implements PessoaService{
 
     @Override
     @TransactionAttribute(TransactionAttributeType.REQUIRED)
-    public Pessoa salvar(Pessoa pessoa) {
-        return pessoaRepository.salvar(pessoa);
+    public Pessoa save(Pessoa pessoa) {
+        return pessoaRepository.save(pessoa);
     }
 }
