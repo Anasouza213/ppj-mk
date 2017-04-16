@@ -10,7 +10,7 @@
       <h:head>
           <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css" />
           <link rel="stylesheet" href="resources/bootstrap/css/bootstrap-theme.min.css" />
-          <link rel="stylesheet" href="resources/sistema/style_sistema.css" />
+          <link rel="stylesheet" href="resources/css_system/css_system.css" />
       </h:head>
 
 
@@ -21,13 +21,13 @@
 
               <div id="idPanelInput">
                   <p:inputText value="#{homeBean.pessoa.nome}"
-                               placeholder="Nome"
+                               placeholder="Name"
                                maxlength="20"
-                               requiredMessage="Informe o nome!"
+                               requiredMessage="Type it name!"
                                styleClass="form-control"/>
 
-                  <p:commandButton value="Salvar"
-                                   actionListener="#{homeBean.salvar()}"
+                  <p:commandButton value="save"
+                                   actionListener="#{homeBean.save()}"
                                    update=":@form msgGrowl"
                                    styleClass="btn btn-info"/>
               </div>
