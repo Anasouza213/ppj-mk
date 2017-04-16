@@ -1,6 +1,6 @@
 package br.com.mk.util;
 
-import br.com.mk.producers.FacesProducer;
+import br.com.mk.util.producers.FacesProducer;
 
 import javax.faces.application.FacesMessage;
 
