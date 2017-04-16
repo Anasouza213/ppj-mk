@@ -7,6 +7,6 @@ import java.io.Serializable;
 
 public interface PessoaService extends Serializable{
 
-    public Pessoa salvar(Pessoa pessoa);
+    Pessoa save(Pessoa pessoa);
 
 }
